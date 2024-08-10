@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./public/static/css/main.3c6323c6.css",
-    "main.js": "./public/static/js/main.8b019858.js",
+    "main.js": "./public/static/js/main.eea738a9.js",
     "static/js/206.e42da630.chunk.js": "./public/static/js/206.e42da630.chunk.js",
     "static/media/NotoSansTC-VariableFont_wght.ttf": "./public/static/media/NotoSansTC-VariableFont_wght.30eb38a7f9422e9badac.ttf",
     "static/media/NineSols.ttf": "./public/static/media/NineSols.5fab13abb7faedf88e44.ttf",
@@ -11,6 +11,6 @@
   },
   "entrypoints": [
     "static/css/main.3c6323c6.css",
-    "static/js/main.8b019858.js"
+    "static/js/main.eea738a9.js"
   ]
 }
