@@ -1,8 +1,8 @@
 {
-  "name": "nine-sols-md-editor",
+  "name": "nine-sols-md-editor-full",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://maple02149.github.io/nine-sols-md-editor",
+  "homepage": "https://maple02149.github.io/nine-sols-md-editor-full",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
