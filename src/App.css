@@ -14,9 +14,9 @@
 
 @font-face {
   font-family: 'NineSols';
-  src: url("../font/NineSols.ttf");
+  src: url("../src/data/NineSols.ttf");
   font-family: 'NotoSansTC';
-  src: url("../font/NotoSansTC-VariableFont_wght.ttf");
+  src: url("../src/data/NotoSansTC-VariableFont_wght.ttf");
 }
 
 .wmde-markdown {
