@@ -16,17 +16,9 @@ class DecodingCangjie {
 
     }
 
-    async init() {
-        // const responseCangjie = await fetch(process.env.PUBLIC_URL + "/CNS_cangjie.json")
-        // const dataCangjie = await responseCangjie.json()
-        // const responseBMO = await fetch(process.env.PUBLIC_URL + "/Unicode_BMP.json")
-        // const dataBMO = await responseBMO.json()
+    async init() { 
         this.cangjieData = dataCangjie as ICangjieJsonFile[]
-        this.uncode_BMP = dataBMO as ICangjieJsonFile[]
-
-        console.log("dataCangjie", dataCangjie)
-        console.log("dataBMO", dataBMO)
-
+        this.uncode_BMP = dataBMO as ICangjieJsonFile[] 
     }
 
 
