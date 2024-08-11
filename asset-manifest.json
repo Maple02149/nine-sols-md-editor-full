@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nine-sols-md-editor-full/static/css/main.645e590f.css",
-    "main.js": "/nine-sols-md-editor-full/static/js/main.0be647e2.js",
+    "main.js": "/nine-sols-md-editor-full/static/js/main.d96c5026.js",
     "static/js/453.8aadf8c9.chunk.js": "/nine-sols-md-editor-full/static/js/453.8aadf8c9.chunk.js",
     "static/media/NotoSansTC-VariableFont_wght.ttf": "/nine-sols-md-editor-full/static/media/NotoSansTC-VariableFont_wght.30eb38a7f9422e9badac.ttf",
     "static/media/NineSols.ttf": "/nine-sols-md-editor-full/static/media/NineSols.5fab13abb7faedf88e44.ttf",
@@ -9,13 +9,17 @@
     "static/media/Child.less": "/nine-sols-md-editor-full/static/media/Child.edcdec6b6d865df20c41.less",
     "index.html": "/nine-sols-md-editor-full/index.html",
     "static/media/edit_square.svg": "/nine-sols-md-editor-full/static/media/edit_square.3a788254931dacab80d8e527c6713d87.svg",
+    "static/media/zoomInsvg.svg": "/nine-sols-md-editor-full/static/media/zoomInsvg.5d459d565c31abd9962623f8138b8bae.svg",
+    "static/media/zoomOutsvg.svg": "/nine-sols-md-editor-full/static/media/zoomOutsvg.da238c993722264557b1d40083ca065b.svg",
     "static/media/translate.svg": "/nine-sols-md-editor-full/static/media/translate.5718c3559c182e4e14ed8af9cd57e0c5.svg",
+    "static/media/clear.svg": "/nine-sols-md-editor-full/static/media/clear.5bfaca79cb0cea931db86a25db7daeda.svg",
+    "static/media/download.svg": "/nine-sols-md-editor-full/static/media/download.d42bec47d776016370ef238eabf7fee8.svg",
     "main.645e590f.css.map": "/nine-sols-md-editor-full/static/css/main.645e590f.css.map",
-    "main.0be647e2.js.map": "/nine-sols-md-editor-full/static/js/main.0be647e2.js.map",
+    "main.d96c5026.js.map": "/nine-sols-md-editor-full/static/js/main.d96c5026.js.map",
     "453.8aadf8c9.chunk.js.map": "/nine-sols-md-editor-full/static/js/453.8aadf8c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.645e590f.css",
-    "static/js/main.0be647e2.js"
+    "static/js/main.d96c5026.js"
   ]
 }
