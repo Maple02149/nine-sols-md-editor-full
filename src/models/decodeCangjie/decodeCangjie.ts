@@ -1,4 +1,5 @@
-
+import dataCangjie from "../../data/CNS_cangjie.json"
+import dataBMO from "../../data/Unicode_BMP.json"
 
 interface ICangjieJsonFile {
     key: string,
@@ -16,12 +17,16 @@ class DecodingCangjie {
     }
 
     async init() {
-        const responseCangjie = await fetch(process.env.PUBLIC_URL + "/CNS_cangjie.json")
-        const dataCangjie = await responseCangjie.json()
-        const responseBMO = await fetch(process.env.PUBLIC_URL + "/Unicode_BMP.json")
-        const dataBMO = await responseBMO.json()
-        this.cangjieData = dataCangjie
-        this.uncode_BMP = dataBMO
+        // const responseCangjie = await fetch(process.env.PUBLIC_URL + "/CNS_cangjie.json")
+        // const dataCangjie = await responseCangjie.json()
+        // const responseBMO = await fetch(process.env.PUBLIC_URL + "/Unicode_BMP.json")
+        // const dataBMO = await responseBMO.json()
+        this.cangjieData = dataCangjie as ICangjieJsonFile[]
+        this.uncode_BMP = dataBMO as ICangjieJsonFile[]
+
+        console.log("dataCangjie", dataCangjie)
+        console.log("dataBMO", dataBMO)
+
     }
 
 
@@ -42,7 +47,7 @@ class DecodingCangjie {
             } else {
                 return v
             }
-        }).join("") 
+        }).join("")
         return decode
     }
 
