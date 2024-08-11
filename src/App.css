@@ -1,5 +1,5 @@
 :root {
-  --markdown-font: 'NineSols';
+  --markdown-font: "NineSols";
 }
 
 @keyframes App-logo-spin {
@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: 'NineSols';
+  font-family: "NineSols";
   src: url("./NineSols.ttf") 
 }
 
