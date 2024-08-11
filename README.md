@@ -1,6 +1,14 @@
-# Nine Sols MD Editor
+# Nine Sols MD Editor 
+
+link: [NineSolsMDEditor](https://github.com/Maple02149/nine-sols-md-editor-full)
 
 說明：非常陽春的英文->太陽文MD Editor
+
+新增了功能包括:
+
+- 自由選擇是否轉換成太陽文
+- 自由選擇是否中文拆碼
+- 隱藏不必要的按鈕
  
 字型作者：
 
