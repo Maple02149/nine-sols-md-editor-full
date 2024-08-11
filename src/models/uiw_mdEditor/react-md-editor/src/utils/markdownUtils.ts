@@ -1,5 +1,4 @@
-import { TextRange } from '../commands';
-import { TextAreaTextApi, ExecuteState } from '../commands';
+import { TextAreaTextApi, TextRange } from '../commands'
 
 export interface TextSection {
   text: string;

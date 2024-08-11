@@ -1,10 +1,10 @@
-import React, { useContext, useEffect } from 'react';
-import { IProps } from '../../Types';
-import { EditorContext, ExecuteCommandState } from '../../Context';
-import { TextAreaCommandOrchestrator } from '../../commands';
-import handleKeyDown from './handleKeyDown';
-import shortcuts from './shortcuts';
-import './index.less';
+import React, { useContext, useEffect } from 'react'
+import { EditorContext, ExecuteCommandState } from '../../Context'
+import { IProps } from '../../Types'
+import { TextAreaCommandOrchestrator } from '../../commands'
+import handleKeyDown from './handleKeyDown'
+import './index.less'
+import shortcuts from './shortcuts'
 
 export interface TextAreaProps extends Omit<React.TextareaHTMLAttributes<HTMLTextAreaElement>, 'value'>, IProps {}
 

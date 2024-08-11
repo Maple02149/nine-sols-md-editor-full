@@ -1,12 +1,12 @@
-import React, { useEffect, useReducer, useMemo, useRef, useImperativeHandle, Fragment } from 'react'
 import MarkdownPreview from '@uiw/react-markdown-preview'
+import React, { useEffect, useImperativeHandle, useMemo, useReducer, useRef } from 'react'
+import { decodeCangjie as decode } from "../../../decodeCangjie"
+import { getCommands, getExtraCommands, ICommand, TextAreaCommandOrchestrator, TextState } from './commands'
+import DragBar from './components/DragBar'
 import TextArea from './components/TextArea'
 import { ToolbarVisibility } from './components/Toolbar'
-import DragBar from './components/DragBar'
-import { getCommands, getExtraCommands, ICommand, TextState, TextAreaCommandOrchestrator } from './commands'
-import { reducer, EditorContext, ContextStore } from './Context'
+import { ContextStore, EditorContext, reducer } from './Context'
 import type { MDEditorProps } from './Types'
-import { decodeCangjie as decode } from "../../../decodeCangjie"
 
 
 function setGroupPopFalse(data: Record<string, boolean> = {}) {

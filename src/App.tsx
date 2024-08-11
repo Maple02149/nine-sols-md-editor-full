@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 
 import "./App.css"
 import { MD_EditBox_Custom } from "./mdEditBox"
