@@ -1,6 +1,6 @@
 # Nine Sols MD Editor 
 
-link: [NineSolsMDEditor](https://github.com/Maple02149/nine-sols-md-editor-full)
+link: [NineSolsMDEditor](https://maple02149.github.io/nine-sols-md-editor-full)
 
 說明：非常陽春的英文->太陽文MD Editor
 
