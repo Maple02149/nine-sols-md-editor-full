@@ -23,13 +23,13 @@ Based on:[@uiw/react-markdown-editor](https://www.npmjs.com/package/@uiw/react-m
 
 ---
 
-###  v0.0.1
+###  v0.1.1
 
 - 更新太陽文特殊符號
 - 更新icon 
 
 
-###  v0.0.1
+###  v0.1.0
 
 - 修正太陽文顯示異常問題
 - 現在重新載入時會保留之前的輸入了
@@ -53,4 +53,6 @@ jimmy031103 (帝欲人形師 )
 
 [【心得】遊戲中的文字翻譯](https://forum.gamer.com.tw/C.php?bsn=74687&snA=152)
  
+---
  
+![happy](https://cdn.discordapp.com/attachments/830324564977778703/1272942860613980212/image.png?ex=66bccfec&is=66bb7e6c&hm=19979506e721259bb2164367b020b6991d3e97c8c37145e4f7b288caccac9aeb&)
