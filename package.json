@@ -1,6 +1,6 @@
 {
   "name": "nine-sols-md-editor-full",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "homepage": "https://maple02149.github.io/nine-sols-md-editor-full",
   "dependencies": {
@@ -27,7 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" 
+    "deploy": "gh-pages -d build",
+    "dev": "npm run build && serve .\\build\\" 
   },
   "eslintConfig": {
     "extends": [

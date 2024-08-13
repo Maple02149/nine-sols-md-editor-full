@@ -1,10 +1,11 @@
 // import MDEditor, { commands } from "@uiw/react-md-editor"
-import edit_square from "../data/edit_square.svg"
-import translate from "../data/translate.svg"
+import special_character from "../data/special_character.svg"
 
 import React, { useState } from "react"
 import clear from "../data/clear.svg"
 import download from "../data/download.svg"
+import language_chinese_cangjie from "../data/language_chinese_cangjie.svg"
+import yi from "../data/yi.svg"
 import zoomInsvg from "../data/zoomInsvg.svg"
 import zoomOutsvg from "../data/zoomOutsvg.svg"
 import { divToImg } from "../models/divToIng/divtoImg"
@@ -17,7 +18,8 @@ export default function MD_EditBox_Custom() {
     const EditorValueKeyWord = "EditorValue"
 
     const [value, setValue] = React.useState<string>(localStorage.getItem(EditorValueKeyWord) ?? "Hello, World!")
-    const [isNineSolsFont, setIsNineSolsFont] = useState<boolean>(false)
+    const [isNineSolsFont, setIsNineSolsFont] = useState<boolean>(true)
+    const [specialCharacter, setSpecialCharacter] = useState<boolean>(true)
     const [isDecodeCangjie, setisDecodeCangjie] = useState<boolean>(true)
     function zoom(zoomIn: boolean) {
         const currentZoom = parseFloat((document.body.style as any).zoom) || 1
@@ -29,8 +31,22 @@ export default function MD_EditBox_Custom() {
         setValue(newValue)
     }
 
+    const handleFontProperty = (d: {
+        specialCharacter: boolean
+        isNineSolsFont: boolean
+    }) => {
+        const {
+            specialCharacter,
+            isNineSolsFont,
+        } = d
+        enum FontKeyWord {
+            NineSols_WithOutPunctuation = "NineSols",
+            NineSols_WithPunctuation = "NineSols2",
+            NotoSansTC = "NotoSansTC"
+        }
+        return isNineSolsFont ? (specialCharacter ? FontKeyWord.NineSols_WithPunctuation : FontKeyWord.NineSols_WithOutPunctuation) : FontKeyWord.NotoSansTC
+    }
     const allCommands = getCommands()
-
     return (
         <div className="container">
             <MDEditor
@@ -51,10 +67,10 @@ export default function MD_EditBox_Custom() {
                 ]}
                 extraCommands={[
                     codeEdit, codeLive, codePreview,
-                    commands.divider, 
+                    commands.divider,
                     commands.group([], {
                         name: "zoomIn",
-                        icon: <img src={zoomInsvg} alt="zoomIn" />, 
+                        icon: <img src={zoomInsvg} alt="zoomIn" />,
                         execute: (
                             state: commands.TextState,
                             api: commands.TextAreaTextApi
@@ -65,7 +81,7 @@ export default function MD_EditBox_Custom() {
                     }),
                     commands.group([], {
                         name: "zoomOut",
-                        icon: <img src={zoomOutsvg} alt="zoomOut" />, 
+                        icon: <img src={zoomOutsvg} alt="zoomOut" />,
                         execute: (
                             state: commands.TextState,
                             api: commands.TextAreaTextApi
@@ -91,17 +107,26 @@ export default function MD_EditBox_Custom() {
                     }),
                     commands.divider,
                     commands.group([], {
-                        name: "update-font-family",
-                        icon: <img src={translate} alt="translate" />,
+                        name: "specialCharacter",
+                        icon: <img src={special_character} alt="specialCharacter" />,
+                        execute: (state, api) => {
+                            setSpecialCharacter(!specialCharacter)
+                            document.documentElement.style.setProperty("--markdown-font", handleFontProperty({ specialCharacter, isNineSolsFont }))
+                        },
+                        buttonProps: { "aria-label": "specialCharacter" }
+                    }),
+                    commands.group([], {
+                        name: "nine-sols-font",
+                        icon: <img src={yi} alt="nine-sols-font" />,
                         execute: (state, api) => {
                             setIsNineSolsFont(!isNineSolsFont)
-                            document.documentElement.style.setProperty("--markdown-font", isNineSolsFont ? "NineSols" : "NotoSansTC")
+                            document.documentElement.style.setProperty("--markdown-font", handleFontProperty({ specialCharacter, isNineSolsFont }))
                         },
-                        buttonProps: { "aria-label": "update-font-family" }
+                        buttonProps: { "aria-label": "nine-sols-font" }
                     }),
                     commands.group([], {
                         name: "uncode-cangjie",
-                        icon: <img src={edit_square} alt="uncode-cangjie" />,
+                        icon: <img src={language_chinese_cangjie} alt="uncode-cangjie" />,
                         execute: (state, api) => {
                             setisDecodeCangjie(!isDecodeCangjie)
                         },

@@ -14,7 +14,12 @@
 
 @font-face {
   font-family: "NineSols";
-  src: url("./NineSols.ttf") 
+  src: url("./font/NineSols.ttf")
+}
+
+@font-face {
+  font-family: "NineSols2";
+  src: url("./font/NineSols02.ttf")
 }
 
 .wmde-markdown {
