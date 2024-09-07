@@ -19,9 +19,14 @@ Based on:[@uiw/react-markdown-editor](https://www.npmjs.com/package/@uiw/react-m
 |:--------:|:--------:|:--------:|
 | ![specialCharacter](https://raw.githubusercontent.com/Maple02149/nine-sols-md-editor-full/9a78cc954326d09e1424a94bfd0b012586516577/src/data/special_character.svg)|  Convert to nine sols font (specialCharacter) |  轉換為九日字體(特殊符號) |
 | ![yi](https://raw.githubusercontent.com/Maple02149/nine-sols-md-editor-full/9a78cc954326d09e1424a94bfd0b012586516577/src/data/yi.svg)|  Convert to nine sols font |  轉換為九日字體 |
-| ![edit](https://raw.githubusercontent.com/Maple02149/nine-sols-md-editor-full/9a78cc954326d09e1424a94bfd0b012586516577/src/data/language_chinese_cangjie.svg)|  Convert to Cangjie codes? |  轉換為倉頡碼|
+| ![edit](https://raw.githubusercontent.com/Maple02149/nine-sols-md-editor-full/9a78cc954326d09e1424a94bfd0b012586516577/src/data/language_chinese_cangjie.svg)|  Convert to Cangjie codes |  轉換為倉頡碼|
+| ![case](https://raw.githubusercontent.com/Maple02149/nine-sols-md-editor-full/78ca56ce2c9eddf73c038a740358e80dedb96a7c/src/data/case.svg)|  Converted Cangjie codes to upper / lower case |  已轉換的倉頡碼顯示為大寫/小寫|
 
 ---
+
+###  v0.1.2
+
+- 新增把已轉換倉頡碼顯示為大寫/小寫功能
 
 ###  v0.1.1
 
@@ -53,6 +58,3 @@ jimmy031103 (帝欲人形師 )
 
 [【心得】遊戲中的文字翻譯](https://forum.gamer.com.tw/C.php?bsn=74687&snA=152)
  
----
- 
-![happy](https://cdn.discordapp.com/attachments/830324564977778703/1272942860613980212/image.png?ex=66bccfec&is=66bb7e6c&hm=19979506e721259bb2164367b020b6991d3e97c8c37145e4f7b288caccac9aeb&)
