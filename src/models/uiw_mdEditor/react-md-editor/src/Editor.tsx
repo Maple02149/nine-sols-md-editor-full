@@ -24,6 +24,7 @@ const InternalMDEditor = React.forwardRef<RefMDEditor, MDEditorProps>(
       prefixCls = 'w-md-editor',
       className,
       decodeCangjie,
+      decodeCangjieToUppercase,
       commands = getCommands(),
       commandsFilter,
       direction,
@@ -52,7 +53,8 @@ const InternalMDEditor = React.forwardRef<RefMDEditor, MDEditorProps>(
       ...other
     } = props || {}
     const inputValue = props.value
-    const deCodeValue = decodeCangjie ? decode.decode(props.value ?? "") : props.value
+    const deCodeValue = decodeCangjie ? decode.decode(props.value ?? "", decodeCangjieToUppercase) : props.value
+
 
     const cmds = commands
       .map((item) => (commandsFilter ? commandsFilter(item, false) : item))

@@ -21,6 +21,7 @@ export interface MDEditorProps extends Omit<React.HTMLAttributes<HTMLDivElement>
    * decodeCangjie in preview
    */
   decodeCangjie: boolean
+  decodeCangjieToUppercase: boolean
   /**
    * The Markdown value.
    */

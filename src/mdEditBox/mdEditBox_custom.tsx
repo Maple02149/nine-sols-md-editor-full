@@ -8,6 +8,7 @@ import language_chinese_cangjie from "../data/language_chinese_cangjie.svg"
 import yi from "../data/yi.svg"
 import zoomInsvg from "../data/zoomInsvg.svg"
 import zoomOutsvg from "../data/zoomOutsvg.svg"
+import decodeCase from "../data/case.svg"
 import { divToImg } from "../models/divToIng/divtoImg"
 import MDEditor, { codeEdit, codeLive, codePreview, commands, getCommands } from "../models/uiw_mdEditor/react-md-editor/src"
 
@@ -21,6 +22,7 @@ export default function MD_EditBox_Custom() {
     const [isNineSolsFont, setIsNineSolsFont] = useState<boolean>(true)
     const [specialCharacter, setSpecialCharacter] = useState<boolean>(true)
     const [isDecodeCangjie, setisDecodeCangjie] = useState<boolean>(true)
+    const [isDecodeCangjieUppercase, setIsDecodeCangjieUppercase] = useState<boolean>(true)
     function zoom(zoomIn: boolean) {
         const currentZoom = parseFloat((document.body.style as any).zoom) || 1
         const newZoom = currentZoom + (zoomIn ? 0.1 : -0.1);
@@ -51,6 +53,7 @@ export default function MD_EditBox_Custom() {
         <div className="container">
             <MDEditor
                 decodeCangjie={isDecodeCangjie}
+                decodeCangjieToUppercase={isDecodeCangjieUppercase}
                 value={value}
                 onChange={handleEditorChange}
                 fullscreen={true}
@@ -106,6 +109,14 @@ export default function MD_EditBox_Custom() {
                         buttonProps: { "aria-label": "download-img" }
                     }),
                     commands.divider,
+                    commands.group([], {
+                        name: "decodeToUpperCase",
+                        icon: <img src={decodeCase} alt="decodeToUpperCase" />,
+                        execute: (state, api) => {
+                            setIsDecodeCangjieUppercase(!isDecodeCangjieUppercase)
+                        },
+                        buttonProps: { "aria-label": "decodeToUpperCase" }
+                    }),
                     commands.group([], {
                         name: "specialCharacter",
                         icon: <img src={special_character} alt="specialCharacter" />,
