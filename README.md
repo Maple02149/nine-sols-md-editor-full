@@ -17,12 +17,25 @@ Based on:[@uiw/react-markdown-editor](https://www.npmjs.com/package/@uiw/react-m
 
 | Button | Eng | Cn-Tc |
 |:--------:|:--------:|:--------:|
-| ![translatet](https://raw.githubusercontent.com/Maple02149/nine-sols-md-editor-full/873120f385cdea485c8eb7472f78c2dfc93d2d17/src/data/translate.svg)|  Convert to nine sols font |  轉換為九日字體 |
-| ![edit](https://raw.githubusercontent.com/Maple02149/nine-sols-md-editor-full/873120f385cdea485c8eb7472f78c2dfc93d2d17/src/data/edit_square.svg)|  Convert to Cangjie codes? |  轉換為倉頡碼|
+| ![specialCharacter](https://raw.githubusercontent.com/Maple02149/nine-sols-md-editor-full/9a78cc954326d09e1424a94bfd0b012586516577/src/data/special_character.svg)|  Convert to nine sols font (specialCharacter) |  轉換為九日字體(特殊符號) |
+| ![yi](https://raw.githubusercontent.com/Maple02149/nine-sols-md-editor-full/9a78cc954326d09e1424a94bfd0b012586516577/src/data/yi.svg)|  Convert to nine sols font |  轉換為九日字體 |
+| ![edit](https://raw.githubusercontent.com/Maple02149/nine-sols-md-editor-full/9a78cc954326d09e1424a94bfd0b012586516577/src/data/language_chinese_cangjie.svg)|  Convert to Cangjie codes? |  轉換為倉頡碼|
 
 ---
 
- 
+###  v0.1.1
+
+- 更新太陽文特殊符號
+- 更新icon 
+
+
+###  v0.1.0
+
+- 修正太陽文顯示異常問題
+- 現在重新載入時會保留之前的輸入了
+- 新增下載功能
+- 新增zoomIn zoomOut功能
+
  
 ## 字型作者&載點 (Font author & Download link)：
 
@@ -40,4 +53,6 @@ jimmy031103 (帝欲人形師 )
 
 [【心得】遊戲中的文字翻譯](https://forum.gamer.com.tw/C.php?bsn=74687&snA=152)
  
+---
  
+![happy](https://cdn.discordapp.com/attachments/830324564977778703/1272942860613980212/image.png?ex=66bccfec&is=66bb7e6c&hm=19979506e721259bb2164367b020b6991d3e97c8c37145e4f7b288caccac9aeb&)
