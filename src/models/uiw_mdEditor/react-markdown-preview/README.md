@@ -31,7 +31,15 @@ $ npm install @uiw/react-markdown-preview --save
 
 ## Usage Example
 
+#### ☁ Try it in the Cloud
+[![Open in VS Code](https://img.shields.io/badge/Open%20in-VS%20Code-blue?logo=visualstudiocode)](https://vscode.dev/github/Maple02149/nine-sols-md-editor-full)
+[![Open in GitHub Codespaces](https://img.shields.io/badge/Open%20in-GitHub%20Codespaces-blue?logo=github)](https://codespaces.new/Maple02149/nine-sols-md-editor-full)
 [![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?logo=codesandbox)](https://codesandbox.io/embed/react-markdown-preview-co1mj?fontsize=14&hidenavigation=1&theme=dark)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Maple02149/nine-sols-md-editor-full)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Maple02149/nine-sols-md-editor-full?template=node&title=ngx-vcard%20Example)
+[![Open in Repl.it](https://replit.com/badge/github/Maple02149/nine-sols-md-editor-full)](https://replit.com/github/Maple02149/nine-sols-md-editor-full)
+[![Open in Glitch](https://img.shields.io/badge/Open%20in-Glitch-blue?logo=glitch)](https://glitch.com/edit/#!/import/github/Maple02149/nine-sols-md-editor-full)
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/Maple02149/nine-sols-md-editor-full)
 
 ```jsx mdx:preview&checkered=0
 import React from 'react';
