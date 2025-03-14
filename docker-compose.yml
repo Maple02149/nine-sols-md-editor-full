@@ -1,0 +1,9 @@
+name: nine-sols-md-editor
+services:
+ nine-sols-md-editor:
+  build:
+   context: .
+   dockerfile: Dockerfile
+  image: nine-sols-md-editor
+  ports:
+   - "3000:3000"
